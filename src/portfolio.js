@@ -20,26 +20,22 @@ const illustration = {
 };
 
 const greeting = {
-  username: "Saad Pasta",
-  title: "Hi all, I'm Saad",
+  username: "Yash Khandelwal",
+  title: "Hi, I am Yash",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
+    "A passionate Full Stack Developer 🚀 with hands-on backend experience. Builds and tests Python applications, integrates REST APIs, and collaborates on production codebases using FASTAPI, Git, and React. Seeking to bring real-world backend skills to a team that moves fast."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
+    "https://drive.google.com/uc?export=download&id=1KutC4q5acU_45RYb2uQt-mMtu19FS6Vl", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
 // Social Media Links
 
 const socialMediaLinks = {
-  github: "https://github.com/saadpasta",
-  linkedin: "https://www.linkedin.com/in/saadpasta/",
-  gmail: "saadpasta70@gmail.com",
-  gitlab: "https://gitlab.com/saadpasta",
-  facebook: "https://www.facebook.com/saad.pasta7",
-  medium: "https://medium.com/@saadpasta",
-  stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
+  github: "https://github.com/yashkhandelwal16",
+  linkedin: "https://www.linkedin.com/in/yash-khandelwal-cse/",
+  gmail: "ykhandelwal158@gmail.com",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
@@ -48,15 +44,15 @@ const socialMediaLinks = {
 // Skills Section
 
 const skillsSection = {
-  title: "What I do",
+  title: "What My Arsenals",
   subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
   skills: [
     emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
+      "⚡ Develop AI-ready full-stack web applications with modern frontend and Python backend technologies"
     ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
+    emoji("⚡ Develop secure backend APIs with Python, FastAPI, SQLAlchemy and MySQL"),
     emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
+      "⚡ Deploy scalable full-stack applications using Git, GitHub, Render, Vercel, and modern cloud technologies"
     )
   ],
 
@@ -66,55 +62,68 @@ https://fontawesome.com/icons?d=gallery */
   softwareSkills: [
     {
       skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5"
+      fontAwesomeClassname: "fab fa-html5",
+      docUrl: "https://developer.mozilla.org/en-US/docs/Web/HTML"
     },
     {
       skillName: "css3",
-      fontAwesomeClassname: "fab fa-css3-alt"
-    },
-    {
-      skillName: "sass",
-      fontAwesomeClassname: "fab fa-sass"
+      fontAwesomeClassname: "fab fa-css3-alt",
+      docUrl: "https://developer.mozilla.org/en-US/docs/Web/CSS"
     },
     {
       skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-js"
+      fontAwesomeClassname: "fab fa-js",
+      docUrl: "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
     },
     {
-      skillName: "reactjs",
-      fontAwesomeClassname: "fab fa-react"
+      skillName: "react.js",
+      fontAwesomeClassname: "fab fa-react",
+      docUrl: "https://react.dev/"
     },
     {
-      skillName: "nodejs",
-      fontAwesomeClassname: "fab fa-node"
+      skillName: "Git",
+      fontAwesomeClassname: "fab fa-git-alt",
+      docUrl: "https://git-scm.com/doc"
     },
     {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
+      skillName: "Github",
+      fontAwesomeClassname: "fab fa-github",
+      docUrl: "https://docs.github.com/"
     },
     {
       skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
+      fontAwesomeClassname: "fab fa-npm",
+      docUrl: "https://docs.npmjs.com/"
     },
     {
-      skillName: "sql-database",
-      fontAwesomeClassname: "fas fa-database"
+      skillName: "SQL-Database",
+      fontAwesomeClassname: "fas fa-database",
+      docUrl: "https://www.w3schools.com/sql/"
     },
     {
-      skillName: "aws",
-      fontAwesomeClassname: "fab fa-aws"
+      skillName: "Automation",
+      fontAwesomeClassname: "fas fa-robot",
+      docUrl: "https://www.ibm.com/topics/automation"
     },
     {
-      skillName: "firebase",
-      fontAwesomeClassname: "fas fa-fire"
+      skillName: "Deployment",
+      fontAwesomeClassname: "fas fa-cloud-upload-alt",
+      docUrl: "https://kubernetes.io/docs/concepts/workloads/controllers/deployment/"
     },
     {
       skillName: "python",
-      fontAwesomeClassname: "fab fa-python"
+      fontAwesomeClassname: "fab fa-python",
+      docUrl: "https://docs.python.org/3/"
     },
     {
       skillName: "docker",
-      fontAwesomeClassname: "fab fa-docker"
+      fontAwesomeClassname: "fab fa-docker",
+      docUrl: "https://docs.docker.com/"
+    },
+    {
+      skillName: "FastAPI",
+      fontAwesomeClassname: "fas fa-server",
+      docUrl: "https://fastapi.tiangolo.com/"
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -126,23 +135,15 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "Harvard University",
+      schoolName: "Medicaps University",
       logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
+      subHeader: "Bachelor of Technology in Computer Science",
+      duration: "August 2024 - June 2028",
       desc: "Participated in the research of XXX and published 3 papers.",
       descBullets: [
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
       ]
-    },
-    {
-      schoolName: "Stanford University",
-      logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
     }
   ]
 };
@@ -154,15 +155,19 @@ const techStack = {
   experience: [
     {
       Stack: "Frontend/Design", //Insert stack or technology you have experience in
-      progressPercentage: "90%" //Insert relative proficiency in percentage
+      progressPercentage: "80%" //Insert relative proficiency in percentage
     },
     {
       Stack: "Backend",
-      progressPercentage: "70%"
+      progressPercentage: "65%"
     },
     {
       Stack: "Programming",
-      progressPercentage: "60%"
+      progressPercentage: "75%"
+    },
+    {
+      Stack: "Tools & Technologies",
+      progressPercentage: "68%"
     }
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false

@@ -20,7 +20,8 @@
   overflow: hidden;
 }
 .skill {
-  line-height: 3.5vw;
+  line-height: 1.5;
+  margin-bottom: 10px;
 }
 .skill-bars {
   font-size: 28px;
@@ -28,19 +29,27 @@
 }
 .skills-container {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
   width: 90%;
   padding: 20px 10px;
-  margin: 0px auto;
+  margin: 0 auto;
   margin-top: 2rem;
 }
 .skills-container > * {
   flex: 1;
   margin-bottom: 30px;
 }
+.skills-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .skills-image > img {
-  margin-left: 80px;
-  max-width: 90%;
+  max-width: 100%;
   height: auto;
+  display: block;
 }
 
 /* Media Query */

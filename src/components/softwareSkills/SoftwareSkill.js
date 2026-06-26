@@ -14,8 +14,15 @@ export default function SoftwareSkill() {
                 className="software-skill-inline"
                 name={skills.skillName}
               >
-                <i className={skills.fontAwesomeClassname}></i>
-                <p>{skills.skillName}</p>
+                <a
+                  href={skills.docUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="software-skill-link"
+                >
+                  <i className={skills.fontAwesomeClassname}></i>
+                  <p>{skills.skillName}</p>
+                </a>
               </li>
             );
           })}

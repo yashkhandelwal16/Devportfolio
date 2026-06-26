@@ -11,6 +11,13 @@ import StyleContext from "../../contexts/StyleContext";
 
 export default function Greeting() {
   const {isDark} = useContext(StyleContext);
+  const isExternalResume = Boolean(
+    greeting.resumeLink && greeting.resumeLink.startsWith("http")
+  );
+  const resumeHref = isExternalResume
+    ? greeting.resumeLink
+    : require("./resume.pdf");
+
   if (!greeting.displayGreeting) {
     return null;
   }
@@ -42,8 +49,10 @@ export default function Greeting() {
                 <Button text="Contact me" href="#contact" />
                 {greeting.resumeLink && (
                   <a
-                    href={require("./resume.pdf")}
-                    download="Resume.pdf"
+                    href={resumeHref}
+                    download={isExternalResume ? undefined : "Resume.pdf"}
+                    target={isExternalResume ? "_blank" : undefined}
+                    rel={isExternalResume ? "noreferrer" : undefined}
                     className="download-link-button"
                   >
                     <Button text="Download my resume" />
