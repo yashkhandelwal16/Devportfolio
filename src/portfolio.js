@@ -183,10 +183,9 @@ const workExperiences = {
       company: "IIT Kharagpur",
       companylogo: require("./assets/images/iit kharagpur.jpg"),
       date: "June 2025 – July 2025",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      desc: "Completed a one-month onsite internship at IIT Kharagpur under the guidance of Prof. Pawan Goyal, focusing on Text Analytics using Python. Worked on Natural Language Processing (NLP), Machine Learning, and Deep Learning fundamentals while applying Python to real-world text processing problems.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Learned NLP concepts including text preprocessing, tokenization, and sentiment analysis."
       ]
     },
     {
@@ -194,14 +193,20 @@ const workExperiences = {
       company: "Elite Coders",
       companylogo: require("./assets/images/elite coders.avif"),
       date: "Jan 2026 – March 2026",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      desc: "Contributed to multiple open-source projects during Elite Coders Winter of Code (ECWoC 2026). Collaborated with mentors and developers, improved project features, fixed bugs, and strengthened Git & GitHub collaboration skills.",
+      descBullets: [
+        "Improved collaboration using Git, GitHub, pull requests, and code reviews."
+      ]
     },
     {
       role: "Python Intern",
       company: "Eduskills Academy",
       companylogo: require("./assets/images/eduskills.png"),
       date: "April 2026 – June 2026",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      desc: "Completed a full-stack development internship focused on building modern web applications using React.js for the frontend and FastAPI for the backend. Gained hands-on experience in REST API development, frontend integration, and database operations while working on real-world projects.",
+      descBullets: [
+        "Developed responsive user interfaces using React.js and integrated them with FastAPI REST APIs."
+      ]
     }
   ]
 };
