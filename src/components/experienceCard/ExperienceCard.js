@@ -17,6 +17,9 @@ export default function ExperienceCard({cardInfo, isDark}) {
       : "rgb(" + values.join(", ") + ")";
   }
 
+  // Use custom color if provided, otherwise use extracted color
+  const bannerColor = cardInfo.color ? cardInfo.color : rgb(colorArrays);
+
   const GetDescBullets = ({descBullets, isDark}) => {
     return descBullets
       ? descBullets.map((item, i) => (
@@ -32,8 +35,11 @@ export default function ExperienceCard({cardInfo, isDark}) {
 
   return (
     <div className={isDark ? "experience-card-dark" : "experience-card"}>
-      <div style={{background: rgb(colorArrays)}} className="experience-banner">
-        <div className="experience-blurred_div"></div>
+      <div style={{background: bannerColor}} className="experience-banner">
+        <div
+          style={cardInfo.color ? {background: "transparent"} : {}}
+          className="experience-blurred_div"
+        ></div>
         <div className="experience-div-company">
           <h5 className="experience-text-company">{cardInfo.company}</h5>
         </div>

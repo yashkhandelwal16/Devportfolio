@@ -20,7 +20,15 @@ export default function SoftwareSkill() {
                   rel="noreferrer"
                   className="software-skill-link"
                 >
-                  <i className={skills.fontAwesomeClassname}></i>
+                  {skills.imageSrc ? (
+                    <img
+                      src={skills.imageSrc}
+                      alt={`${skills.skillName} icon`}
+                      className={`software-skill-icon ${skills.skillName === "C++" ? "cpp-logo" : ""}`}
+                    />
+                  ) : (
+                    <i className={skills.fontAwesomeClassname}></i>
+                  )}
                   <p>{skills.skillName}</p>
                 </a>
               </li>

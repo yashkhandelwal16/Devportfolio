@@ -25,13 +25,28 @@
 }
 
 .software-skill-inline > i,
-.software-skill-inline a > i {
+.software-skill-inline a > i,
+.software-skill-inline a > img {
   color: $subTitle;
   transition: color 0.2s ease, transform 0.2s ease;
 }
 
+.software-skill-inline a > img {
+  width: 3rem;
+  height: 3rem;
+  object-fit: contain;
+}
+
+.software-skill-icon.cpp-logo {
+  width: 6.0rem;
+  height: 6.0rem;
+  margin-top: 0.8rem;
+  transform: translateY(0.18rem);
+}
+
 .software-skill-inline > i:hover,
-.software-skill-inline a:hover > i {
+.software-skill-inline a:hover > i,
+.software-skill-inline a:hover > img {
   color: $skillsColor;
   transform: scale(1.05);
 }

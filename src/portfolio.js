@@ -76,7 +76,7 @@ https://fontawesome.com/icons?d=gallery */
       docUrl: "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
     },
     {
-      skillName: "react.js",
+      skillName: "React.js",
       fontAwesomeClassname: "fab fa-react",
       docUrl: "https://react.dev/"
     },
@@ -111,12 +111,12 @@ https://fontawesome.com/icons?d=gallery */
       docUrl: "https://kubernetes.io/docs/concepts/workloads/controllers/deployment/"
     },
     {
-      skillName: "python",
+      skillName: "Python",
       fontAwesomeClassname: "fab fa-python",
       docUrl: "https://docs.python.org/3/"
     },
     {
-      skillName: "docker",
+      skillName: "Docker",
       fontAwesomeClassname: "fab fa-docker",
       docUrl: "https://docs.docker.com/"
     },
@@ -136,13 +136,13 @@ const educationInfo = {
   schools: [
     {
       schoolName: "Medicaps University",
-      logo: require("./assets/images/harvardLogo.png"),
+      logo: require("./assets/images/image.png"),
       subHeader: "Bachelor of Technology in Computer Science",
       duration: "August 2024 - June 2028",
-      desc: "Participated in the research of XXX and published 3 papers.",
+      desc: "Currently pursuing B.Tech in Computer Science and Engineering at Medicaps University. Developing a strong foundation in software engineering, data structures, algorithms, databases, and modern web technologies while working on real-world projects.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Maintaining a strong academic record while strengthening problem-solving and software development skills.",
+        "Gaining practical experience through full-stack projects, AI-powered applications, and deployment"
       ]
     }
   ]
@@ -179,8 +179,8 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Software Engineer",
-      company: "Facebook",
+      role: "Intern",
+      company: "IIT Kharagpur",
       companylogo: require("./assets/images/facebookLogo.png"),
       date: "June 2018 – Present",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
