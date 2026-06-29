@@ -252,7 +252,7 @@ const bigProjects = {
     {
       image: require("./assets/images/Screenshot 2026-06-29 183842.png"),
       projectName: "Pyrun",
-      projectDesc: "A browser-based online code compiler supporting Python programming languages with real-time execution and a clean coding experience.",
+      projectDesc: "A browser-based online code compiler supporting Python programming languages with real-time execution and a clean coding experience with professional themes options.",
       footerLink: [
         {
           name: "GitHub Code",
@@ -278,50 +278,41 @@ const achievementSection = {
 
   achievementsCards: [
     {
-      title: "Google Code-In Finalist",
+      title: "Gemini Certified Student",
       subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-      image: require("./assets/images/codeInLogo.webp"),
-      imageAlt: "Google Code-In Logo",
+        "Earned the Gemini Certified Student credential, demonstrating foundational AI knowledge and practical skills.",
+      image: require("./assets/images/Google-gemini-AI-for-kids-safety.png"),
+      imageAlt: "Google Gemini Logo",
       footerLink: [
         {
           name: "Certification",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
-        },
-        {
-          name: "Award Letter",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        },
-        {
-          name: "Google Code-in Blog",
-          url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
+          url: "https://edu.exceedlms.com/student/award/5G1LrGbDqLhMEsGFuY66AZc7"
         }
       ]
     },
     {
-      title: "Google Assistant Action",
+      title: "Oracle Foundation Associates",
       subtitle:
-        "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-      image: require("./assets/images/googleAssistantLogo.webp"),
-      imageAlt: "Google Assistant Action Logo",
+        "Earned the Oracle AI Foundations Associate certification, validating core AI and machine learning concepts.",
+      image: require("./assets/images/oracle.jpg"),
+      imageAlt: "Oracle Foundation Associates Logo",
       footerLink: [
         {
-          name: "View Google Assistant Action",
-          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
+          name: "Certificate",
+          url: "https://drive.google.com/file/d/1g_9wFj6g0bPqV3Q5qmOkxD8SGdoQnJUP/view"
         }
       ]
     },
 
     {
-      title: "PWA Web App Developer",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/pwaLogo.webp"),
-      imageAlt: "PWA Logo",
+      title: "Introduction to Data Science",
+      subtitle: "Completed Cisco's Introduction to Data Science certification, strengthening my skills in data analysis, visualization.",
+      image: require("./assets/images/cisco.png"),
+      imageAlt: "Cisco Logo",
       footerLink: [
-        { name: "Certification", url: "" },
         {
-          name: "Final Project",
-          url: "https://pakistan-olx-1.firebaseapp.com/"
+          name: "Certificate",
+          url: "https://drive.google.com/file/d/17kEyTycHXhwZ3sJvQNZgh_T6TaP3E8tH/view"
         }
       ]
     }
