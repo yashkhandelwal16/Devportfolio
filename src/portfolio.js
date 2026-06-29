@@ -191,7 +191,7 @@ const workExperiences = {
       footerLink: [
         {
           name: "Verify Certificate",
-          url: "https://drive.google.com" // Update with your certificate link
+          url: "https://drive.google.com/file/d/1-RGGud6p6TzqP9v5MVU1MghBB5FGzLnj/view" // Update with your certificate link
         }
       ]
     },
@@ -208,7 +208,7 @@ const workExperiences = {
       footerLink: [
         {
           name: "Verify Certificate",
-          url: "https://drive.google.com" // Update with your certificate link
+          url: "https://drive.google.com/file/d/1jd6RCPtCWr-NS_EgEuXmYFXjZL8tU9uL/view" // Update with your certificate link
         }
       ]
     },
@@ -224,7 +224,7 @@ const workExperiences = {
       footerLink: [
         {
           name: "Verify Certificate",
-          url: "https://drive.google.com" // Update with your certificate link
+          url: "https://drive.google.com/file/d/1JuS8kB5W_rkswhImcdQAA9W8dRPPQRoj/view" // Update with your certificate link
         }
       ]
     }
