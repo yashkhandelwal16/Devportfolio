@@ -187,6 +187,12 @@ const workExperiences = {
       desc: "Completed a one-month onsite internship at IIT Kharagpur under the guidance of Prof. Pawan Goyal, focusing on Text Analytics using Python. Worked on Natural Language Processing (NLP), Machine Learning, and Deep Learning fundamentals while applying Python to real-world text processing problems.",
       descBullets: [
         "Learned NLP concepts including text preprocessing, tokenization, and sentiment analysis."
+      ],
+      footerLink: [
+        {
+          name: "Verify Certificate",
+          url: "https://drive.google.com" // Update with your certificate link
+        }
       ]
     },
     {
@@ -198,6 +204,12 @@ const workExperiences = {
       desc: "Contributed to multiple open-source projects during Elite Coders Winter of Code (ECWoC 2026). Collaborated with mentors and developers, improved project features, fixed bugs, and strengthened Git & GitHub collaboration skills.",
       descBullets: [
         "Improved collaboration using Git, GitHub, pull requests, and code reviews."
+      ],
+      footerLink: [
+        {
+          name: "Verify Certificate",
+          url: "https://drive.google.com" // Update with your certificate link
+        }
       ]
     },
     {
@@ -208,6 +220,12 @@ const workExperiences = {
       desc: "Completed a full-stack development internship focused on building modern web applications using React.js for the frontend and FastAPI for the backend. Gained hands-on experience in REST API development, frontend integration, and database operations while working on real-world projects.",
       descBullets: [
         "Developed responsive user interfaces using React.js and integrated them with FastAPI REST APIs."
+      ],
+      footerLink: [
+        {
+          name: "Verify Certificate",
+          url: "https://drive.google.com" // Update with your certificate link
+        }
       ]
     }
   ]

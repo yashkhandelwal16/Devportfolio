@@ -100,6 +100,9 @@
 .experience-text-details {
   /* top padding = half logo height (4 rem) + some breathing room */
   padding: 5rem 1.5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  min-height: 300px;
 }
 
 /* Light-theme details */
@@ -162,6 +165,15 @@
   color: rgba(255, 255, 255, 0.8);
 }
 
+.experience-text-details ul {
+  margin: 0.75rem 0;
+  padding-left: 1.25rem;
+}
+
+.experience-text-details ul li {
+  margin-bottom: 0.5rem;
+}
+
 /* ── Media Queries ───────────────────────────────────────────── */
 
 @media (max-width: 1380px) {
@@ -180,6 +192,52 @@
     top: 7.5rem;
   }
 }
+
+/* ── Footer buttons (Verify Certificate links) ─────────────── */
+
+.experience-card-footer {
+  margin-top: auto;
+  padding-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.experience-tag {
+  background: $buttonColor;
+  color: $lightBackground3;
+  vertical-align: middle;
+  align-items: center;
+  border-radius: 6px;
+  display: inline-flex;
+  font-size: 1rem;
+  font-weight: 500;
+  height: 2.5em;
+  justify-content: center;
+  white-space: nowrap;
+  line-height: 1.5;
+  padding: 0 1.25em;
+  cursor: pointer;
+  transition: 0.2s ease-in;
+}
+
+.experience-tag:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.experience-card-dark .experience-tag {
+  background: $buttonColor;
+  color: $textColorDark;
+}
+
+.experience-card-dark .experience-tag:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+}
+
+/* ── Media Queries ───────────────────────────────────────────── */
 
 @media (max-width: 768px) {
   .experience-text-role {
