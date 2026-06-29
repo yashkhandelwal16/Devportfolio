@@ -1,81 +1,83 @@
 @import "../../_globalColor";
 
+/* ── Card Wrapper ──────────────────────────────────────────── */
+
 .experience-card {
   position: relative;
   background-color: $lightBackground1;
   box-shadow: $lightBoxShadowDark 0px 10px 30px -15px;
   border-radius: 10px;
   border: 1px solid $lightBorder1;
+  transition: box-shadow 0.3s ease;
 }
 
 .experience-card-dark {
   position: relative;
   background-color: $darkBackground;
-  box-shadow: $lightBoxShadowDark 0px 10px 30px -15px;
+  box-shadow: rgba(255, 255, 255, 0.08) 0px 10px 30px -15px;
   border-radius: 10px;
-  border: 1px solid $lightBorder1;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: box-shadow 0.3s ease;
 }
 
 .experience-card:hover {
   box-shadow: $lightBoxShadowDark 0px 20px 30px -10px;
 }
 
+.experience-card-dark:hover {
+  box-shadow: rgba(255, 255, 255, 0.12) 0px 20px 30px -10px;
+}
+
+/* ── Banner (coloured gradient strip at top) ─────────────────── */
+
 .experience-banner {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 150%;
-  background: $experienceCardBannerLG;
-  border-radius: 10px 10px 0px 0px;
-  -webkit-filter: blur(0px);
-  -moz-filter: blur(0px);
-  -o-filter: blur(0px);
-  -ms-filter: blur(0px);
-  filter: blur(0px);
+  position: relative;
+  border-radius: 10px 10px 0 0;
   height: 11rem;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-}
-
-.experience-blurred_div {
-  position: absolute;
-  background: $experienceCardBlurredDivLG;
-  -webkit-filter: blur(5px);
-  -moz-filter: blur(5px);
-  -o-filter: blur(5px);
-  -ms-filter: blur(5px);
-  filter: blur(5px);
-  height: 11rem;
-  top: 0;
-  left: 0;
-  width: 100%;
-  border-radius: 10px 10px 0px 0px;
-}
-
-.experience-div-company {
-  position: absolute;
-  background: transparent;
-  height: 9rem;
-  top: 0;
-  left: 0;
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden; /* keeps blurred div inside the rounded corners */
+}
+
+/* ── Blurred overlay on the banner ──────────────────────────── */
+
+.experience-blurred_div {
+  position: absolute;
+  inset: 0; /* top:0 right:0 bottom:0 left:0 */
+  background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15));
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px 10px 0 0;
+}
+
+/* ── Company name centred on the banner ─────────────────────── */
+
+.experience-div-company {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+  /* sits above the blurred div */
+  z-index: 1;
 }
 
 .experience-text-company {
-  text-align: center;
-  padding: 1.5rem;
   margin: 0;
-  color: white;
+  color: #ffffff;
   font-size: 25px;
-  text-align: center;
   font-weight: 700;
+  text-align: center;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
+  /* shadow makes it readable on any banner colour */
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.7);
 }
+
+/* ── Circular logo (sits straddling banner & details) ─────────── */
 
 .experience-roundedimg {
   position: absolute;
@@ -89,73 +91,81 @@
   height: 8rem;
   box-shadow: 0 0.5rem 1rem $lightBoxShadowDarker;
   border-radius: 50%;
+  background-color: #fff; /* white backing so transparent logos look clean */
+  z-index: 2;
 }
+
+/* ── Details section (below the banner) ─────────────────────── */
+
+.experience-text-details {
+  /* top padding = half logo height (4 rem) + some breathing room */
+  padding: 5rem 1.5rem 1.5rem;
+}
+
+/* Light-theme details */
+.experience-card .experience-text-details {
+  background-color: $lightBackground1;
+  border-radius: 0 0 10px 10px;
+}
+
+/* Dark-theme details */
+.experience-card-dark .experience-text-details {
+  background-color: $darkBackground;
+  border-radius: 0 0 10px 10px;
+}
+
+/* ── Text colours ────────────────────────────────────────────── */
 
 .experience-text-role {
   text-align: center;
-  color: $textColor;
+  color: $titleColor;
   font-weight: 700;
   font-size: 25px;
-  margin: 0px;
-  padding-top: 1.5rem;
+  margin: 0;
   line-height: normal;
 }
-.dark-mode-text {
-  color: $textColorDark !important;
-}
+
 .experience-text-date {
   text-align: center;
-  color: $textColor;
+  color: $cardSubtitle;
   font-size: 20px;
-  margin: 0px;
-  padding-top: 1rem;
+  margin: 0;
+  padding-top: 0.5rem;
   font-weight: 600;
 }
 
 .experience-text-desc {
   text-align: center;
-}
-.experience-card .experience-text-details {
-  padding: 1.5rem;
-  margin-top: 2rem;
-  background-color: #ffffff;
-  border-radius: 0 0 10px 10px;
-  border: 1px solid $lightBorder1;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+  color: $textColor;
+  margin-top: 0.75rem;
 }
 
-.experience-card-dark .experience-text-details {
-  background: transparent;
-  border: none;
-  box-shadow: none;
-}
-
-/* Ensure all text inside the dark card details is high-contrast and readable */
-.experience-card-dark .experience-text-details,
-.experience-card-dark .experience-text-details p,
-.experience-card-dark .experience-text-details li,
-.experience-card-dark .experience-text-details h5,
-.experience-card-dark .experience-text-details .subTitle {
+/* Dark-mode overrides */
+.dark-mode-text {
   color: $textColorDark !important;
 }
 
-/* Prevent the blurred banner overlay from showing through the light card */
-.experience-card .experience-blurred_div {
-  background: transparent;
-}
-
-/* Ensure readable text colors in dark theme */
-.experience-card-dark .subTitle,
-.experience-card-dark .experience-text-role,
-.experience-card-dark .experience-text-date {
+.experience-card-dark .experience-text-role {
   color: $textColorDark;
 }
 
-/* Media Query */
+.experience-card-dark .experience-text-date {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.experience-card-dark .experience-text-desc,
+.experience-card-dark .subTitle {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.experience-card-dark .experience-text-details li {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* ── Media Queries ───────────────────────────────────────────── */
 
 @media (max-width: 1380px) {
   .experience-text-role {
-    padding-top: 0.5rem;
     font-size: 22px;
   }
   .experience-text-company {
@@ -167,6 +177,7 @@
   .experience-roundedimg {
     width: 6.5rem;
     height: 6.5rem;
+    top: 7.5rem;
   }
 }
 

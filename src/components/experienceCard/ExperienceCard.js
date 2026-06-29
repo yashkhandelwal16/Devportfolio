@@ -35,24 +35,27 @@ export default function ExperienceCard({cardInfo, isDark}) {
 
   return (
     <div className={isDark ? "experience-card-dark" : "experience-card"}>
+      {/* ── Banner ── */}
       <div style={{background: bannerColor}} className="experience-banner">
-        <div
-          style={cardInfo.color ? {background: "transparent"} : {}}
-          className="experience-blurred_div"
-        ></div>
+        {/* Blurred overlay for readability */}
+        <div className="experience-blurred_div"></div>
+        {/* Company name */}
         <div className="experience-div-company">
           <h5 className="experience-text-company">{cardInfo.company}</h5>
         </div>
-
-        <img
-          crossOrigin={"anonymous"}
-          ref={imgRef}
-          className="experience-roundedimg"
-          src={cardInfo.companylogo}
-          alt={cardInfo.company}
-          onLoad={() => getColorArrays()}
-        />
       </div>
+
+      {/* ── Circular logo: outside banner so it isn't clipped ── */}
+      <img
+        crossOrigin={"anonymous"}
+        ref={imgRef}
+        className="experience-roundedimg"
+        src={cardInfo.companylogo}
+        alt={cardInfo.company}
+        onLoad={() => getColorArrays()}
+      />
+
+      {/* ── Details ── */}
       <div className="experience-text-details">
         <h5
           className={
