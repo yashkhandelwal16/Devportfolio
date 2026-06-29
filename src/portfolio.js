@@ -193,7 +193,7 @@ const workExperiences = {
       role: "Contributer",
       company: "Elite Coders",
       companylogo: require("./assets/images/elite coders.avif"),
-      color: "linear-gradient(135deg, #d64993 0%, #eb7eb8 100%)",
+      color: "linear-gradient(135deg, #da6fa6ff 0%, #eb7eb8 100%)",
       date: "Jan 2026 – March 2026",
       desc: "Contributed to multiple open-source projects during Elite Coders Winter of Code (ECWoC 2026). Collaborated with mentors and developers, improved project features, fixed bugs, and strengthened Git & GitHub collaboration skills.",
       descBullets: [
@@ -224,29 +224,43 @@ const openSource = {
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  title: "Projects",
+  subtitle: "Showcasing my skills through real-world projects.",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/Screenshot 2026-06-29 183107.png"),
+      projectName: "Smart Notes",
+      projectDesc: "A secure full-stack notes application for creating, organizing, and managing notes with ease.It is secure and intuitive platform for managing notes with seamless user experience.",
       footerLink: [
         {
-          name: "Visit Website",
-          url: "http://saayahealth.com/"
+          name: "Github Code",
+          url: "https://github.com/yashkhandelwal16/Smart-Notes"
         }
-        //  you can add extra buttons here.
       ]
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/Screenshot 2026-06-29 183416.png"),
+      projectName: "Data Studio",
+      projectDesc: "An interactive data visualization platform that transforms datasets into insightful charts, dashboards, and analytics for better decision-making.",
       footerLink: [
         {
-          name: "Visit Website",
-          url: "http://nextu.se/"
+          name: "Github Code",
+          url: "https://github.com/yashkhandelwal16/DataStudio"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/Screenshot 2026-06-29 183842.png"),
+      projectName: "Pyrun",
+      projectDesc: "A browser-based online code compiler supporting Python programming languages with real-time execution and a clean coding experience.",
+      footerLink: [
+        {
+          name: "GitHub Code",
+          url: "https://github.com/yashkhandelwal16/PyRun"
+        },
+        {
+          name: "Live Preview",
+          url: "https://pyrun-dtlw.onrender.com/"
         }
       ]
     }
