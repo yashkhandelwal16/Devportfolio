@@ -2,7 +2,7 @@
 
 .experience-card {
   position: relative;
-  background-color: lightblue;
+  background-color: $lightBackground1;
   box-shadow: $lightBoxShadowDark 0px 10px 30px -15px;
   border-radius: 10px;
   border: 1px solid $lightBorder1;
@@ -115,10 +115,40 @@
 .experience-text-desc {
   text-align: center;
 }
-
-.experience-text-details {
+.experience-card .experience-text-details {
   padding: 1.5rem;
   margin-top: 2rem;
+  background-color: #ffffff;
+  border-radius: 0 0 10px 10px;
+  border: 1px solid $lightBorder1;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+.experience-card-dark .experience-text-details {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+/* Ensure all text inside the dark card details is high-contrast and readable */
+.experience-card-dark .experience-text-details,
+.experience-card-dark .experience-text-details p,
+.experience-card-dark .experience-text-details li,
+.experience-card-dark .experience-text-details h5,
+.experience-card-dark .experience-text-details .subTitle {
+  color: $textColorDark !important;
+}
+
+/* Prevent the blurred banner overlay from showing through the light card */
+.experience-card .experience-blurred_div {
+  background: transparent;
+}
+
+/* Ensure readable text colors in dark theme */
+.experience-card-dark .subTitle,
+.experience-card-dark .experience-text-role,
+.experience-card-dark .experience-text-date {
+  color: $textColorDark;
 }
 
 /* Media Query */
