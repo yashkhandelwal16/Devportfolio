@@ -330,7 +330,7 @@ const achievementSection = {
       footerLink: [
         {
           name: "Certificate",
-          url: require("./assets/images/cisco.png")
+          url: require("./assets/images/Cisco_Certificate.png")
         }
       ]
     }
