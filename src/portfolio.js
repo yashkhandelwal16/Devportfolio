@@ -343,18 +343,18 @@ const achievementSection = {
 const blogSection = {
   title: "Blogs",
   subtitle:
-    "With Love for Developing cool stuff, I love to write and teach others what I have learnt.",
+    "With Love for Developing cool stuff, I love to teach others what I have learnt.",
   displayMediumBlogs: "true", // Set true to display fetched medium blogs instead of hardcoded ones
   blogs: [
     {
-      url: "https://blog.usejournal.com/create-a-google-assistant-action-and-win-a-google-t-shirt-and-cloud-credits-4a8d86d76eae",
-      title: "Win a Google Assistant Tshirt and $200 in Google Cloud Credits",
+      url: "https://openai.com/index/how-agents-are-transforming-work/",
+      title: "The Rise of AI Agents : Beyond Traditional Chatbots",
       description:
-        "Do you want to win $200 and Google Assistant Tshirt by creating a Google Assistant Action in less then 30 min?"
+        "Discover how autonomous AI agents are transforming software development, productivity, and business automation."
     },
     {
       url: "https://medium.com/@saadpasta/why-react-is-the-best-5a97563f423e",
-      title: "Why REACT is The Best?",
+      title: "AI in Software Engineering : The New Developer Workflow",
       description:
         "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
     }

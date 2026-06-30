@@ -12,17 +12,12 @@ export default function Footer() {
         <p className={isDark ? "dark-mode footer-text" : "footer-text"}>
           {emoji("Made with ❤️ by Yash Khandelwal")}
         </p>
-        <p className={isDark ? "dark-mode footer-text" : "footer-text"}>
-          Theme by{" "}
-          <a
-            href="https://github.com/saadpasta/developerFolio"
-            target="_blank"
-            rel="noreferrer"
-          >
-            developerFolio
-          </a>
-        </p>
       </div>
     </Fade>
   );
 }
+
+
+
+
+
