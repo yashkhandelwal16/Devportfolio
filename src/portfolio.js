@@ -343,7 +343,7 @@ const achievementSection = {
 const blogSection = {
   title: "Blogs",
   subtitle:
-    "With Love for Developing cool stuff, I love to teach others what I have learnt.",
+    "With Love for Developing cool stuff, I love to share others what I have learnt.",
   displayMediumBlogs: "true", // Set true to display fetched medium blogs instead of hardcoded ones
   blogs: [
     {
@@ -353,10 +353,10 @@ const blogSection = {
         "Discover how autonomous AI agents are transforming software development, productivity, and business automation."
     },
     {
-      url: "https://medium.com/@saadpasta/why-react-is-the-best-5a97563f423e",
+      url: "https://www.ibm.com/think/topics/ai-in-software-development",
       title: "AI in Software Engineering : The New Developer Workflow",
       description:
-        "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
+        "Discover how developers use AI for coding, debugging, testing, documentation, and deployment."
     }
   ],
   display: true // Set false to hide this section, defaults to true
