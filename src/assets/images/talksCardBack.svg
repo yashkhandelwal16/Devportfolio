@@ -1,3 +1,12 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet" viewBox="0 0 640 640" width="380" height="380"><defs><path d="M4.67 -288.49L822.65 -209.08L776.44 266.95L-41.54 187.55L4.67 -288.49Z" id="i1mzDr05ID"></path></defs><g><g><g><use xlink:href="#i1mzDr05ID" opacity="1" fill="#55198b" ></use></g></g></g></svg>
+<svg width="600" height="400" viewBox="0 0 600 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="400" rx="28" fill="url(#bg)" />
+  <circle cx="480" cy="110" r="110" fill="rgba(255,255,255,0.12)" />
+  <circle cx="140" cy="330" r="130" fill="rgba(255,255,255,0.10)" />
+  <path d="M95 285C155 218 228 205 310 250C360 277 426 289 505 247" stroke="rgba(255,255,255,0.35)" stroke-width="8" stroke-linecap="round" />
+  <defs>
+    <linearGradient id="bg" x1="60" y1="40" x2="540" y2="360" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#4F46E5" />
+      <stop offset="1" stop-color="#06B6D4" />
+    </linearGradient>
+  </defs>
+</svg>

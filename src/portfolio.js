@@ -191,7 +191,7 @@ const workExperiences = {
       footerLink: [
         {
           name: "Verify Certificate",
-          url: "https://drive.google.com/file/d/1-RGGud6p6TzqP9v5MVU1MghBB5FGzLnj/view" // Update with your certificate link
+          url: require("./assets/images/IIT KGP Certificate.png")
         }
       ]
     },
@@ -208,7 +208,7 @@ const workExperiences = {
       footerLink: [
         {
           name: "Verify Certificate",
-          url: "https://drive.google.com/file/d/1jd6RCPtCWr-NS_EgEuXmYFXjZL8tU9uL/view" // Update with your certificate link
+          url: require("./assets/images/EcWOC'26 (1).png")
         }
       ]
     },
@@ -224,7 +224,7 @@ const workExperiences = {
       footerLink: [
         {
           name: "Verify Certificate",
-          url: "https://drive.google.com/file/d/1JuS8kB5W_rkswhImcdQAA9W8dRPPQRoj/view" // Update with your certificate link
+          url: require("./assets/images/Internship_Certificate.jpg")
         }
       ]
     }
@@ -246,7 +246,7 @@ const bigProjects = {
   subtitle: "Showcasing my skills through real-world projects.",
   projects: [
     {
-      image: require("./assets/images/Screenshot 2026-06-29 183107.png"),
+      image: require("./assets/images/SmartNotes.png"),
       projectName: "Smart Notes",
       projectDesc: "A secure full-stack notes application for creating, organizing, and managing notes with ease.It is secure and intuitive platform for managing notes with seamless user experience.",
       footerLink: [
@@ -257,7 +257,7 @@ const bigProjects = {
       ]
     },
     {
-      image: require("./assets/images/Screenshot 2026-06-29 183416.png"),
+      image: require("./assets/images/DataStudio.png"),
       projectName: "Data Studio",
       projectDesc: "An interactive data visualization platform that transforms datasets into insightful charts, dashboards, and analytics for better decision-making.",
       footerLink: [
@@ -268,7 +268,7 @@ const bigProjects = {
       ]
     },
     {
-      image: require("./assets/images/Screenshot 2026-06-29 183842.png"),
+      image: require("./assets/images/Pyrun.png"),
       projectName: "Pyrun",
       projectDesc: "A browser-based online code compiler supporting Python programming languages with real-time execution and a clean coding experience with professional themes options.",
       footerLink: [
@@ -290,7 +290,7 @@ const bigProjects = {
 // Include certificates, talks etc
 
 const achievementSection = {
-  title: emoji("Achievements And Certifications 🏆 "),
+  title: emoji("Achievements And Certifications"),
   subtitle:
     "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
 
@@ -304,7 +304,7 @@ const achievementSection = {
       footerLink: [
         {
           name: "Certification",
-          url: "https://edu.exceedlms.com/student/award/5G1LrGbDqLhMEsGFuY66AZc7"
+          url: require("./assets/images/Gemini Certificate.png")
         }
       ]
     },
@@ -317,7 +317,7 @@ const achievementSection = {
       footerLink: [
         {
           name: "Certificate",
-          url: "https://drive.google.com/file/d/1g_9wFj6g0bPqV3Q5qmOkxD8SGdoQnJUP/view"
+          url: require("./assets/images/eCertificate_page-0001.jpg")
         }
       ]
     },
@@ -330,7 +330,7 @@ const achievementSection = {
       footerLink: [
         {
           name: "Certificate",
-          url: "https://drive.google.com/file/d/17kEyTycHXhwZ3sJvQNZgh_T6TaP3E8tH/view"
+          url: require("./assets/images/cisco.png")
         }
       ]
     }
