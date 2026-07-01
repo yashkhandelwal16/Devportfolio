@@ -1,10 +1,8 @@
 import React, {useContext} from "react";
 import "./Contact.scss";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
-import {illustration, contactInfo} from "../../portfolio";
+import {contactInfo} from "../../portfolio";
 import {Fade} from "react-reveal";
-import email from "../../assets/lottie/email";
-import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import StyleContext from "../../contexts/StyleContext";
 
 export default function Contact() {
@@ -24,46 +22,61 @@ export default function Contact() {
             >
               {contactInfo.subtitle}
             </p>
-            <div
-              className={
-                isDark ? "dark-mode contact-text-div" : "contact-text-div"
-              }
-            >
-              {contactInfo.number && (
-                <>
-                  <a
-                    className="contact-detail"
-                    href={"tel:" + contactInfo.number}
-                  >
-                    {contactInfo.number}
-                  </a>
-                  <br />
-                  <br />
-                </>
-              )}
-              <a
-                className="contact-detail-email"
-                href={"mailto:" + contactInfo.email_address}
-              >
-                {contactInfo.email_address}
-              </a>
-              <br />
-              <br />
+            <div className="social-media-container">
               <SocialMedia />
             </div>
           </div>
-          <div className="contact-image-div">
-            {illustration.animated ? (
-              <DisplayLottie animationData={email} />
-            ) : (
-              <img
-                alt="Man working"
-                src={require("../../assets/images/contactMailDark.svg")}
-              ></img>
-            )}
+          <div className="contact-form-div">
+            <form
+              action={`https://formsubmit.co/${contactInfo.email_address}`}
+              method="POST"
+              className="contact-form"
+            >
+              <input type="hidden" name="_captcha" value="false" />
+              <input
+                type="hidden"
+                name="_subject"
+                value="New Message from Portfolio Website!"
+              />
+
+              <div className="form-group">
+                <input
+                  type="text"
+                  name="name"
+                  className="form-input"
+                  placeholder="Full Name"
+                  required
+                />
+              </div>
+
+              <div className="form-group">
+                <input
+                  type="email"
+                  name="email"
+                  className="form-input"
+                  placeholder="Email Address"
+                  required
+                />
+              </div>
+
+              <div className="form-group">
+                <textarea
+                  name="message"
+                  rows="4"
+                  className="form-textarea"
+                  placeholder="Your Message"
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit" className="form-submit-btn">
+                Send Message
+              </button>
+            </form>
           </div>
         </div>
       </div>
     </Fade>
   );
 }
+
