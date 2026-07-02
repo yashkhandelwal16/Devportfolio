@@ -106,7 +106,7 @@ export default function Contact() {
                   name="message"
                   value={formData.message}
                   onChange={handleChange}
-                  rows="4"
+                  rows="3"
                   className="form-textarea"
                   placeholder="Your Message"
                   required
