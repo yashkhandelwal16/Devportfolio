@@ -53,9 +53,37 @@
   line-height: 40px;
 }
 
-.greeting-image-div > img {
-  max-width: 100%;
-  height: auto;
+.greeting-image-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-pic {
+  margin-top: -25px;
+  width: 380px;
+  height: 380px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #6c63ff;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.03);
+    box-shadow: 0 12px 30px rgba(108, 99, 255, 0.4);
+  }
+}
+
+.dark-mode {
+  .profile-pic {
+    border-color: #857cff;
+    box-shadow: 0 10px 25px rgba(255, 255, 255, 0.05);
+
+    &:hover {
+      box-shadow: 0 12px 30px rgba(133, 124, 255, 0.4);
+    }
+  }
 }
 
 .wave-emoji {
@@ -116,7 +144,13 @@
     display: block;
   }
   .greeting-image-div {
-    height: 256px;
+    height: auto;
+    margin-top: 20px;
+  }
+  .profile-pic {
+    width: 250px;
+    height: 250px;
+    margin-top: 0;
   }
 }
 
