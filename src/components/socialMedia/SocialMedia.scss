@@ -2,6 +2,9 @@
 
 .social-media-div {
   font-size: 2em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
 }
 
 .icon-button {
@@ -85,6 +88,6 @@
 /* Media Query */
 @media (max-width: 768px) {
   .social-media-div {
-    text-align: center;
+    justify-content: center;
   }
 }
