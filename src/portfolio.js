@@ -182,7 +182,7 @@ const workExperiences = {
     {
       role: "Intern",
       company: "IIT Kharagpur",
-      companylogo: require("./assets/images/iit kharagpur.jpg"),
+      companylogo: require("./assets/images/iit kharagpur.png"),
       color: "linear-gradient(135deg, #3590e8 0%, #6cb4f5 100%)",
       date: "June 2025 – July 2025",
       desc: "Completed a one-month onsite internship at IIT Kharagpur under the guidance of Prof. Pawan Goyal, focusing on Text Analytics using Python. Worked on Natural Language Processing (NLP), Machine Learning, and Deep Learning fundamentals while applying Python to real-world text processing problems.",
@@ -199,7 +199,7 @@ const workExperiences = {
     {
       role: "Contributer",
       company: "Elite Coders",
-      companylogo: require("./assets/images/elite coders.avif"),
+      companylogo: require("./assets/images/elite coders.png"),
       color: "linear-gradient(135deg, #da6fa6ff 0%, #eb7eb8 100%)",
       date: "Jan 2026 – March 2026",
       desc: "Contributed to multiple open-source projects during Elite Coders Winter of Code (ECWoC 2026). Collaborated with mentors and developers, improved project features, fixed bugs, and strengthened Git & GitHub collaboration skills.",
@@ -318,7 +318,7 @@ const achievementSection = {
       footerLink: [
         {
           name: "Certificate",
-          url: require("./assets/images/eCertificate_page-0001.jpg")
+          url: require("./assets/images/eCertificate_page-0001.png")
         }
       ]
     },
