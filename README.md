@@ -31,13 +31,9 @@ npm start
 
 Visit: `http://localhost:3000`
 
-## 📸 Preview
-
-> Add screenshots or a live demo GIF here.
-
 ## 🌐 Live Demo
 
-🔗 
+🔗 https://devportfolio-two-phi.vercel.app/
 
 ## 🤝 Connect With Me
 
