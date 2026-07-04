@@ -28,7 +28,7 @@ const greeting = {
   resumeLink:
     "https://drive.google.com/uc?export=download&id=1KutC4q5acU_45RYb2uQt-mMtu19FS6Vl", // Set to empty to hide the button
   displayGreeting: true, // Set false to hide this section, defaults to true
-  avatar_img_path: require("./assets/images/profile picture.jpg") // Update this link or require a local image to change your profile picture!
+  avatar_img_path: require("./assets/images/Profile Picture.png") // Update this link or require a local image to change your profile picture!
 };
 
 // Social Media Links
